@@ -57,7 +57,7 @@ public class BookResource {
     public Response postBookByIsbn(Books b) {
     b.setIsbn(++index);
     booklist.put(new Integer(index),b);
-     
+    
 	LinksDto linksResponse = new LinksDto(); 
 	linksResponse.addLink(new LinkDto("view-book", "/books/" + b.getIsbn(),
 		"GET"));
