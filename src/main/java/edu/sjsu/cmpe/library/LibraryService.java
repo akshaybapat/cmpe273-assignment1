@@ -1,12 +1,12 @@
-package edu.sjsu.cmpe.library;
+package edu.sjsu.cmpe.dropwizard.library;
 
 import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
 
-import edu.sjsu.cmpe.library.api.resources.BookResource;
-import edu.sjsu.cmpe.library.api.resources.RootResource;
-import edu.sjsu.cmpe.library.config.LibraryServiceConfiguration;
+import edu.sjsu.cmpe.dropwizard.library.api.resources.BookResource;
+import edu.sjsu.cmpe.dropwizard.library.api.resources.RootResource;
+import edu.sjsu.cmpe.dropwizard.library.config.LibraryServiceConfiguration;
 
 public class LibraryService extends Service<LibraryServiceConfiguration> {
 

@@ -1,12 +1,10 @@
-package edu.sjsu.cmpe.library.dto;
+package edu.sjsu.cmpe.dropwizard.library.dto;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author saung
- *
- */
+import edu.sjsu.cmpe.dropwizard.library.dto.LinkDto;
+
 public class LinksDto {
     private List<LinkDto> links = new ArrayList<LinkDto>();
 
@@ -28,5 +26,4 @@ public class LinksDto {
     public void setLinks(List<LinkDto> links) {
 	this.links = links;
     }
-
 }

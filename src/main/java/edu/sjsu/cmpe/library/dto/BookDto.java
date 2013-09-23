@@ -1,33 +1,35 @@
-package edu.sjsu.cmpe.library.dto;
+package edu.sjsu.cmpe.dropwizard.library.dto;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import edu.sjsu.cmpe.library.domain.Book;
+import edu.sjsu.cmpe.dropwizard.library.domain.Books;
+import edu.sjsu.cmpe.dropwizard.library.dto.LinksDto;
 
 @JsonPropertyOrder(alphabetic = true)
 public class BookDto extends LinksDto {
-    private Book book;
 
-    /**
-     * @param book
-     */
-    public BookDto(Book book) {
-	super();
-	this.book = book;
-    }
+	 private Books book;
 
-    /**
-     * @return the book
-     */
-    public Book getBook() {
-	return book;
-    }
+	    /**
+	     * @param book
+	     */
+	    public BookDto(Books book) {
+		super();
+		this.book = book;
+	    }
 
-    /**
-     * @param book
-     *            the book to set
-     */
-    public void setBook(Book book) {
-	this.book = book;
-    }
+	    /**
+	     * @return the book
+	     */
+	    public Books getBook() {
+		return book;
+	    }
+
+	    /**
+	     * @param book
+	     *            the book to set
+	     */
+	    public void setBook(Books book) {
+		this.book = book;
+	    }
 }
